@@ -1,0 +1,247 @@
+.market-status-panel {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    padding: 16px;
+    border-radius: 12px;
+    color: #d1d4dc;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    min-width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.market-panel-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    border-bottom: 1px solid #2a2e39;
+    padding-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+.market-quote-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    background: #080a0e;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2a2e39;
+}
+
+.market-quote-block .metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.market-quote-block .metric span { font-size: 0.75rem; color: #787b86; margin-bottom: 4px; }
+.market-quote-block .metric strong { font-size: 1.1rem; }
+
+.market-turnover-block {
+    margin-bottom: 16px;
+    background: #080a0e;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2a2e39;
+}
+
+.turnover-val { color: #f5a623; font-size: 1.1rem; }
+.turnover-bar-bg { height: 6px; background: #2a2e39; border-radius: 3px; overflow: hidden; margin: 8px 0; }
+.turnover-bar-fill { height: 100%; background: linear-gradient(90deg, #f5a623, #ff5e3a); transition: width 0.4s; }
+.turnover-subtext { font-size: 0.7rem; color: #787b86; text-align: right; }
+
+.market-inst-block {
+    background: #080a0e;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2a2e39;
+    margin-bottom: 16px;
+}
+
+.market-inst-block h4 {
+    margin: 0 0 12px 0;
+    font-size: 0.9rem;
+    color: #e0e3eb;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.inst-date { font-size: 0.7rem; color: #787b86; font-weight: normal; }
+
+.inst-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.inst-item {
+    background: #131722;
+    padding: 8px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid #2a2e39;
+}
+
+.inst-label-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+}
+
+.inst-item span { font-size: 0.75rem; color: #787b86; }
+.inst-item strong { font-size: 0.95rem; }
+
+.inst-count-label {
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+.inst-count-label.up { background: rgba(239, 83, 80, 0.15); color: #ef5350; }
+.inst-count-label.down { background: rgba(38, 166, 154, 0.15); color: #26a69a; }
+.inst-count-label.pivot { background: #ff9800 !important; color: #000 !important; }
+
+.inst-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+    border-top: 1px solid #2a2e39;
+    font-size: 0.85rem;
+}
+
+.market-daytrade-block {
+    background: #080a0e;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2a2e39;
+}
+
+.market-daytrade-block h4 { margin: 0 0 10px 0; font-size: 0.9rem; color: #e0e3eb; text-align: center; }
+
+.dt-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+.dt-item { background: #131722; padding: 8px; border-radius: 6px; text-align: center; border: 1px solid #2a2e39; }
+.dt-item span { display: block; font-size: 0.75rem; color: #787b86; margin-bottom: 4px; }
+.dt-item strong { font-size: 1rem; }
+
+.dt-subtext { font-size: 0.7rem; color: #787b86; text-align: center; }
+
+.up-color { color: #ef5350 !important; }
+.down-color { color: #26a69a !important; }
+.profit-color { color: #ef5350 !important; }
+.loss-color { color: #26a69a !important; }
+
+.market-skeleton, .market-error, .market-empty {
+    background: #131722;
+    border: 1px solid #2a2e39;
+    padding: 24px;
+    border-radius: 12px;
+    color: #787b86;
+    text-align: center;
+}
+/* Key Brokers Panel Features */
+.key-brokers-container {
+    padding: 12px;
+    background: #181c25;
+    border-radius: 6px;
+    margin-top: 15px;
+    border: 1px solid #2a2e39;
+}
+
+.broker-columns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.broker-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.buy-col {
+    background: rgba(239, 83, 80, 0.05);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.sell-col {
+    background: rgba(38, 166, 154, 0.05);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.broker-header {
+    font-size: 0.8rem;
+    color: #787b86;
+    margin-bottom: 6px;
+    text-align: center;
+    border-bottom: 1px solid #2a2e39;
+    padding-bottom: 4px;
+}
+
+.broker-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    padding: 4px 6px;
+    background: #131722;
+    border-radius: 4px;
+}
+
+.broker-name {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.broker-net {
+    font-weight: 500;
+}
+
+.broker-badge {
+    font-size: 0.7rem;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Specific Badge Colors */
+.badge-day-trade {
+    background: rgba(239, 83, 80, 0.2);
+    color: #ef5350;
+    border: 1px solid rgba(239, 83, 80, 0.3);
+}
+
+.badge-swing {
+    background: rgba(3, 169, 244, 0.2);
+    color: #03a9f4;
+    border: 1px solid rgba(3, 169, 244, 0.3);
+}
+
+.badge-mystery {
+    background: rgba(156, 39, 176, 0.2);
+    color: #9c27b0;
+    border: 1px solid rgba(156, 39, 176, 0.3);
+}
+
+.broker-loading {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #787b86;
+    padding: 10px;
+    background: #181c25;
+    border-radius: 6px;
+}
